@@ -1,0 +1,331 @@
+/* Estilos gerais */
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  }
+
+.article-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+:root {
+    --primary: #c96833;
+    --secondary: #f2ede7;
+    --text-color: #fff;
+    --text-secondary: #202020;
+    --text-tertiary: #5d5d5d;
+  }
+
+ 
+body{
+    background-color: var(--secondary);
+}
+  
+    /* Nan Bar */
+    /* Estilos para a Barra de Navegação */
+.navbar {
+    background-color: var(--text-secondary);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: var(--text-color);
+    font-size: 22px;
+    margin-left: 140px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Alinhe verticalmente os links ao lado do logo */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.menu-icon {
+    display: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+    
+  
+  /* Event form */
+  #event-subscription {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+  }
+  
+  #disclaimer h2,
+  #disclaimer .event-date {
+    color: var(--primary);
+  }
+  
+  #disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  
+  #disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  #disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  
+  #disclaimer .event-date {
+    font-weight: bold;
+  }
+  
+  #subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+  }
+  
+  #subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+  }
+  
+  .form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+/* Cards */
+
+.article-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--text-tertiary);
+}
+
+.article-section h2{
+    text-align: center;
+    margin: 40px;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+
+
+.article-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Estilos para os cards */
+.article-card {
+    width: calc(30% - 20px);
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 6px rgba(204, 103, 25, 0.1);
+    cursor: pointer;
+}
+
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.date {
+    margin-top: 6px;
+    color: var(--text-tertiary);
+    font-size: 14px;
+}
+
+.article-cards h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+.article-cards p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-tertiary);
+}
+
+.article-cards a {
+    display: inline-block;
+    width: fit-content;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 2px 8px;
+    background-color: #3d3d3d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.article-cards a:hover {
+    background-color: var(--primary);
+}
+
+ /* Call to Action Section */
+ #cta {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/hrz-6.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  #cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  
+  #cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+  /* Footer */
+  #footer {
+    text-align: center;
+    color: var(--text-tertiary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  #footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  
+  #footer span {
+    font-weight: bold;
+  }
+  
+  /* Mobile */
+  @media (max-width: 450px) {
+    /* Event form */
+    #event-subscription {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    #disclaimer {
+      padding: 2em;
+    }
+  
+    #disclaimer h2 {
+      margin-bottom: 0.5em;
+    }
+  
+    #subscription-form {
+      max-width: 70%;
+      margin-bottom: 2em;
+    }
+       /* Call to Action Section */
+       #cta .btn {
+        width: 80%;
+        background-color: #c96833;
+        opacity: 100%;
+      }
+
+      .article-section h2{
+        text-align: center;
+      }
+    }
